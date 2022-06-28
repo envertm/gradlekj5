@@ -52,3 +52,6 @@ Feature: Probando APIS con junit5
 
   Scenario: Aristogatos
     Given print 'Aristotosffffffffffffff'
+    
+      Scenario: Aristogatos
+    Given print 'Aristotosffffffffffffff'
