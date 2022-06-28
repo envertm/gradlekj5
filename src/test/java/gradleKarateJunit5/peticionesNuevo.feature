@@ -50,8 +50,11 @@ Feature: Probando APIS con junit5
   Scenario: PRUEBA DOODLE
     Given print 'Prueba DOOLE'
 
-  Scenario: Aristogatos
-    Given print 'Aristotosffffffffffffff'
-    
-      Scenario: Aristogatos
-    Given print 'Aristotosffffffffffffff'
+  Scenario: Aristogatos1
+    Given print '1Aristotosffffffffffffff'
+
+  Scenario: Aristogatos2
+    Given print '2Aristotosffffffffffffff'
+
+  Scenario: Aristogatos3
+    Given print '3Aristotosffffffffffffff'
