@@ -58,3 +58,6 @@ Feature: Probando APIS con junit5
 
   Scenario: Aristogatos3
     Given print '3Aristotosffffffffffffff'
+    
+    Scenario: DONGATO
+    Given print 'DONGATO'  
