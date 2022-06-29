@@ -3,3 +3,5 @@
 >gradle build
 --Recuerda que en la pantalla de CMD no muestra el links del reporte, lo que se tiene que hacer es depues de ejecutar en command line es ir a la ruta
 C:\Users\CANVIA\eclipse-workspace\gradleKarateJunit5\build\karate-reports donde internamente ya se actualiza solo nos queda abrir.
+
+file:///C:/ProgramData/Jenkins/.jenkins/workspace/gradleKarateJunit5V2/build/karate-reports/gradleKarateJunit5.peticionesNuevo.html
