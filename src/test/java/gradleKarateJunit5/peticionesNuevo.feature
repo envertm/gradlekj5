@@ -64,7 +64,9 @@ Feature: Probando APIS con junit5
 
   Scenario: DONGATO_1
     Given print 'DONGATO_1'
-    
-    Scenario: SAmantha
-    Given print 'Samantha'  
-    
+
+  Scenario: SAmantha
+    Given print 'Samantha'
+
+  Scenario: DAJU
+    Given print 'Samantha DAJU'
