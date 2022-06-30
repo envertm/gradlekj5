@@ -70,3 +70,6 @@ Feature: Probando APIS con junit5
 
   Scenario: DAJU
     Given print 'Samantha DAJU'
+    
+    Scenario: Muneca
+    Given print 'Muneca'  
