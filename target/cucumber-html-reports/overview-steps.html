@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
-<script type="text/javascript" src="js/Chart.min.js"></script>
-<script type="text/javascript" src="js/moment.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
 <link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
 <link rel="stylesheet" href="css/font-awesome.min.css"/>
 <link rel="shortcut icon" href="images/favicon.png"/>
 
-<script type="text/javascript">
+<script>
 $(document).ready(function() {
     // this will tell tablesorter to try looking for the data-value attribute
     // if present, it'll sort by that instead
@@ -41,7 +41,6 @@ $(document).ready(function() {
 
 
 
-  
 <title>Cucumber Reports  - Steps Overview</title>
 
 </head>
@@ -52,10 +51,10 @@ $(document).ready(function() {
     <div class="collapse navbar-collapse">
       <p class="navbar-text navbar-left">Cucumber Report</p>
       <ul class="nav navbar-nav navbar-right">
-                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
-                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -64,35 +63,35 @@ $(document).ready(function() {
 
 <div class="container-fluid">
   <div class="col-md-5 col-md-offset-1">
-    
+
 <table class="table table-bordered" id="build-info">
   <thead>
     <tr>
       <th>Project</th>
-            <th>Date</th>
+      <th>Date</th>
     </tr>
   </thead>
   <tbody>
     <tr class="info">
-      <td>gradleKarateJunit5</td>
-            <td>29 jun. 2022, 21:06</td>
+      <td>demo</td>
+      <td>03 Jul 2022, 18:25</td>
     </tr>
   </tbody>
 </table>
 
   </div>
   <div class="col-md-3 col-md-offset-2">
-      </div>
+  </div>
 </div>
 
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
     <h2>Steps Statistics</h2>
-          <p>The following graph shows step statistics for this build. Below list is based on results.
+      <p>The following graph shows step statistics for this build. Below list is based on results.
  step does not provide information about result then is not listed below.
  Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
-      </div>
+  </div>
 </div>
 
 <div class="container-fluid" id="report">
@@ -104,28 +103,31 @@ $(document).ready(function() {
           <tr class="header">
             <th>Implementation</th>
             <th>Occurrences</th>
-            <th>Duration</th>
-            <th>Average</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
             <th>Ratio</th>
           </tr>
         </thead>
 
         <tbody>
-                      <tr>
+            <tr>
               <td class="location">karate</td>
-              <td>42</td>
-              <td class="duration" data-value="1034145200">1s 034ms</td>
-              <td class="duration" data-value="24622504">024ms</td>
+              <td>47</td>
+              <td class="duration" data-value="48336880">0.048</td>
+              <td class="duration" data-value="48336880">0.234</td>
+              <td class="duration" data-value="2271833400">2.271</td>
               <td class="passed">100.00%</td>
             </tr>
-                  </tbody>
+        </tbody>
 
         <tfoot class="total">
           <tr>
             <td>1</td>
-            <td>42</td>
-            <td class="duration">1s 034ms</td>
-            <td class="duration">024ms</td>
+            <td>47</td>
+            <td class="duration">0.048</td>
+            <td class="duration">2.271</td>
+            <td class="duration">2.271</td>
             <td>Totals</td>
           </tr>
         </tfoot>

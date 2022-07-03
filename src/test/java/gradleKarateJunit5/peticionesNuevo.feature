@@ -74,5 +74,4 @@ Feature: Probando APIS con junit5
   Scenario: Muneca
     Given print 'Muneca'
 
-  Scenario: JACKY
-    Given print 'JACKY'
+

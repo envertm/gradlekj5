@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"gradleKarateJunit5\/peticionesNuevo[1:6]","start":1656554762455,"end":1656554762666,"title":"gradleKarateJunit5\/peticionesNuevo[1:6] 21:06:02.455-21:06:02.666 Primera prueba con junit5"},{"id":2,"group":2,"content":"gradleKarateJunit5\/peticionesNuevo[2:10]","start":1656554762455,"end":1656554762666,"title":"gradleKarateJunit5\/peticionesNuevo[2:10] 21:06:02.455-21:06:02.666 Segunda prueba con junit5"},{"id":3,"group":3,"content":"gradleKarateJunit5\/peticionesNuevo[3:13]","start":1656554762455,"end":1656554762666,"title":"gradleKarateJunit5\/peticionesNuevo[3:13] 21:06:02.455-21:06:02.666 Tercera prueba con junit5"},{"id":4,"group":4,"content":"gradleKarateJunit5\/peticionesNuevo[4:16]","start":1656554762455,"end":1656554762666,"title":"gradleKarateJunit5\/peticionesNuevo[4:16] 21:06:02.455-21:06:02.666 Cuarta prueba con junit5"},{"id":5,"group":5,"content":"gradleKarateJunit5\/peticionesNuevo[5:20]","start":1656554762455,"end":1656554762666,"title":"gradleKarateJunit5\/peticionesNuevo[5:20] 21:06:02.455-21:06:02.666 Quinta prueba con junit5"},{"id":6,"group":3,"content":"gradleKarateJunit5\/peticionesNuevo[6:23]","start":1656554762680,"end":1656554762685,"title":"gradleKarateJunit5\/peticionesNuevo[6:23] 21:06:02.680-21:06:02.685 NueavaPruebaGradleProyecto"},{"id":7,"group":5,"content":"gradleKarateJunit5\/peticionesNuevo[7:26]","start":1656554762679,"end":1656554762680,"title":"gradleKarateJunit5\/peticionesNuevo[7:26] 21:06:02.679-21:06:02.680 PruebaPAPA"},{"id":8,"group":2,"content":"gradleKarateJunit5\/peticionesNuevo[8:29]","start":1656554762682,"end":1656554762683,"title":"gradleKarateJunit5\/peticionesNuevo[8:29] 21:06:02.682-21:06:02.683 PruebaMAMA"},{"id":9,"group":1,"content":"gradleKarateJunit5\/peticionesNuevo[9:32]","start":1656554762679,"end":1656554762680,"title":"gradleKarateJunit5\/peticionesNuevo[9:32] 21:06:02.679-21:06:02.680 pruebaAlyssa"},{"id":10,"group":4,"content":"gradleKarateJunit5\/peticionesNuevo[10:35]","start":1656554762683,"end":1656554762685,"title":"gradleKarateJunit5\/peticionesNuevo[10:35] 21:06:02.683-21:06:02.685 PruebaJacky"},{"id":11,"group":1,"content":"gradleKarateJunit5\/peticionesNuevo[11:38]","start":1656554762690,"end":1656554762697,"title":"gradleKarateJunit5\/peticionesNuevo[11:38] 21:06:02.690-21:06:02.697 Prueba Salchicha"},{"id":12,"group":5,"content":"gradleKarateJunit5\/peticionesNuevo[12:41]","start":1656554762690,"end":1656554762691,"title":"gradleKarateJunit5\/peticionesNuevo[12:41] 21:06:02.690-21:06:02.691 Prueba TOMAS"},{"id":13,"group":2,"content":"gradleKarateJunit5\/peticionesNuevo[13:44]","start":1656554762694,"end":1656554762695,"title":"gradleKarateJunit5\/peticionesNuevo[13:44] 21:06:02.694-21:06:02.695 PRUEBA SNOOPY"},{"id":14,"group":4,"content":"gradleKarateJunit5\/peticionesNuevo[14:47]","start":1656554762694,"end":1656554762695,"title":"gradleKarateJunit5\/peticionesNuevo[14:47] 21:06:02.694-21:06:02.695 PRUEBA SNOOPY XXXX"},{"id":15,"group":3,"content":"gradleKarateJunit5\/peticionesNuevo[15:50]","start":1656554762701,"end":1656554762702,"title":"gradleKarateJunit5\/peticionesNuevo[15:50] 21:06:02.701-21:06:02.702 PRUEBA DOODLE"},{"id":16,"group":5,"content":"gradleKarateJunit5\/peticionesNuevo[16:53]","start":1656554762701,"end":1656554762702,"title":"gradleKarateJunit5\/peticionesNuevo[16:53] 21:06:02.701-21:06:02.702 Aristogatos1"},{"id":17,"group":2,"content":"gradleKarateJunit5\/peticionesNuevo[17:56]","start":1656554762705,"end":1656554762708,"title":"gradleKarateJunit5\/peticionesNuevo[17:56] 21:06:02.705-21:06:02.708 Aristogatos2"},{"id":18,"group":4,"content":"gradleKarateJunit5\/peticionesNuevo[18:59]","start":1656554762705,"end":1656554762707,"title":"gradleKarateJunit5\/peticionesNuevo[18:59] 21:06:02.705-21:06:02.707 Aristogatos3"},{"id":19,"group":1,"content":"gradleKarateJunit5\/peticionesNuevo[19:62]","start":1656554762712,"end":1656554762713,"title":"gradleKarateJunit5\/peticionesNuevo[19:62] 21:06:02.712-21:06:02.713 DONGATO"},{"id":20,"group":3,"content":"gradleKarateJunit5\/peticionesNuevo[20:65]","start":1656554762711,"end":1656554762711,"title":"gradleKarateJunit5\/peticionesNuevo[20:65] 21:06:02.711-21:06:02.711 DONGATO_1"},{"id":21,"group":5,"content":"gradleKarateJunit5\/peticionesNuevo[21:68]","start":1656554762712,"end":1656554762713,"title":"gradleKarateJunit5\/peticionesNuevo[21:68] 21:06:02.712-21:06:02.713 SAmantha"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
