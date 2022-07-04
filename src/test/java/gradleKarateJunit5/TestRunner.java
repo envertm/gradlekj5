@@ -36,7 +36,8 @@ public class TestRunner {
 	           //     .karateEnv("demo")
 	                .parallel(5);
 	        generateReport(results.getReportDir());
-	        assertEquals(results.getErrorMessages(), results.getFailCount() == 0);
+	       // assertEquals(results.getErrorMessages(), results.getFailCount() == 0);
+	       assertEquals(0, results.getFailCount(), results.getErrorMessages());
 	    }
 
 	    public static void generateReport(String karateOutputPath) {
