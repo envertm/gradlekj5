@@ -82,3 +82,6 @@ Feature: Probando APIS con junit5
 
   Scenario: Enferma3
     Given print 'enferma2'
+    
+    Scenario: Samantha
+    Given print 'Samantha'  
