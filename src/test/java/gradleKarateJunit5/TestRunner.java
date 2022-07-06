@@ -31,7 +31,7 @@ public class TestRunner {
 	
 	   @Test
 	    public void testParallel() {
-	        Results results = Runner.path("classpath:gradleKarateJunit5")
+	        Results results = Runner.path("classpath:gradleKarateJunit5", "classpath:gradleKarateJunit5Privada")
 	                .outputCucumberJson(true)
 	           //     .karateEnv("demo")
 	                .parallel(5);
