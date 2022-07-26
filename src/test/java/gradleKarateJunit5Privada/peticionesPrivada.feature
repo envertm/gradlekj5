@@ -8,3 +8,6 @@ Feature: Probando APIS
 
   Scenario: PUBLICA
     Given print 'PREPRODUCTIVO'
+
+  Scenario: TRAIDING
+    Given print 'traidingViews'
